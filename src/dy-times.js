@@ -11,6 +11,8 @@
   function dyTimesDirective($animate) {
     return {
       terminal: true,
+      priority: 1000,
+      multiElement: true,
       transclude: 'element',
       restrict: 'A',
       link: dyTimesLink

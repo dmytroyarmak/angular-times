@@ -9,10 +9,11 @@
     <div ng-app="example" ng-init="number = 5">
       <input type="text" ng-model="number">
 
-      <div dy-times="number">
+      <div dy-times-start="number">
         <p>Hello {{$index}}: {{name}}</p>
         <input type="text" ng-model="name">
       </div>
+      <hr dy-times-end>
     </div>
   </body>
 </html>
