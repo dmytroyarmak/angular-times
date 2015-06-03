@@ -1,6 +1,6 @@
 !(function() {
-	'use strict';
-	
-	angular
-		.module('example', ['dyTimes']);	
+  'use strict';
+
+  angular
+    .module('example', ['dyTimes']);	
 }());
