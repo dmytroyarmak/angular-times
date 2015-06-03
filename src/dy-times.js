@@ -43,6 +43,7 @@
         clone[clone.length++] = document.createComment(' end dyTimes: ' + $attr.dyTimes + ' ');
         $animate.enter(clone, null, angular.element(previousNode));
         previousNode = clone;
+        newScope.$index = blocks.length;
         blocks.push({
           clone: clone,
           scope: newScope
