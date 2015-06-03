@@ -6,8 +6,13 @@
 		<script src="example.js"></script>
 	</head>
 	<body>
-		<div ng-app="example">
-			<div dy-times="2">Test</div>
+		<div ng-app="example" ng-init="number = 5">
+			<input type="text" ng-model="number">
+				
+			<div dy-times="number">
+				<p>Hello: {{name}}</p>
+				<input type="text" ng-model="name">
+			</div>
 		</div>
 	</body>
 </html>
